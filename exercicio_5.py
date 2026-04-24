@@ -55,3 +55,12 @@ Resposta:
 Não
 
 """
+
+Gene = input("Qual o gene desejado? ")
+Posição = input("Qual a posição da variante no Gene? ")
+Genoma = input("Qual o genoma de referencia? ")
+
+if Gene == "chr17" and Posição >= "41196312" and Posição <= "41277500" and Genoma == "hg19" or "hg38":
+    print("Sim")
+else:
+    print("Não")
