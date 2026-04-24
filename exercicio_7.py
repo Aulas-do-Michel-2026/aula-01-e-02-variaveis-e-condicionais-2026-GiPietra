@@ -100,6 +100,6 @@ if Reads < 10 or VAF < 20:
 elif Impacto == "Baixo":
     print("Irrelevante")
 elif POP > 5 and not ( Gene == "HFE" or  Gene == "MEFV" or Gene == "GJB2"):
-    print("Irrelevante")
+    print("É irrelevante")
 else:
-    print("Relevante")
+    print("É relevante")
