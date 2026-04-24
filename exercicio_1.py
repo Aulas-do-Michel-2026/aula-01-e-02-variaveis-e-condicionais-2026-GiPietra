@@ -19,3 +19,11 @@ Dica: Use inputs para receber os dados!
 Lembre de converter ele para o tipo necessário!
 Print na tela com "print"
 """
+
+Primeira_Nota = input("Insira sua primeira nota:")
+Segunda_nota = input("Insira sua segunda nota:")
+Terceira_nota = input("Insira sua terceira nota:")
+
+Soma = (float(Primeira_Nota) + float(Segunda_nota) + float(Terceira_nota))
+Média = Soma / 3
+print(f"A média entre as suas notas é: {round(Média, 2)}") 
