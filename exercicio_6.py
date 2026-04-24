@@ -52,3 +52,19 @@ Qual país você vai viajar? China
 Resposta:
 Não temos essa moeda em caixa.
 """
+
+Pais = input("Qual país você deseja visitar? ")
+Dinheiro =input("Quantos reais deseja converter? ")
+
+Dolar = int(Dinheiro) / 5
+Pesos = int(Dinheiro) * 180
+Yenes = int(Dinheiro) * 30
+
+if Pais == "Estados Unidos":
+    print (f"{Dolar} USD")
+elif Pais == "Argentina":
+    print(f"{Pesos} ARS")
+elif Pais == "Japão":
+    print(f"{Yenes} JPY")
+else: 
+    print("Não temos essa moeda para conversão")
