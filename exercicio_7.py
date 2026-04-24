@@ -88,3 +88,18 @@ Esse exercício está com uma resolução no notebook da aula.
 
 Tente, se não der, olhe lá!
 """
+
+POP = int(input("Qual a frequencia populacional desse gene? "))
+Gene = (input("Qual a o gene da variante? "))
+Impacto = (input("Qual Impacto dessa variante? Alto ou Baixo "))
+Reads = int(input("Essa alteração apareceu em quantas reads? "))
+VAF = int(input("Qual a frequencia alelica da variante?" ))
+
+if Reads < 10 or VAF < 20:
+    print("É um artefato")
+elif Impacto == "Baixo":
+    print("Irrelevante")
+elif POP > 5 and not ( Gene == "HFE" or  Gene == "MEFV" or Gene == "GJB2"):
+    print("Irrelevante")
+else:
+    print("Relevante")
