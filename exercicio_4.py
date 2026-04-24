@@ -37,3 +37,11 @@ Resposta:
 Sim
 
 """
+
+Gene = input("Qual o gene desejado? ")
+Posição = input("Qual a posição da variante no Gene? ")
+
+if Gene == "chr17" and Posição >= "41196312" and Posição <= "41277500":
+    print("Sim")
+else:
+    print("Não")
